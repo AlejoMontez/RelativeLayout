@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aula7.relativelayout.MainActivity">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/r1_section1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_imageProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/tv_titleName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_imageProfile"
+                    android:layout_centerHorizontal="true"
+                    android:text="GABRIEL MONTEZUMA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_titleSubName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_titleName"
+                    android:layout_centerHorizontal="true"
+                    android:text="Colombia - Pasto"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/r1_section2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tv_titleSubName">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_column1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="943f"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_weight="1"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_column2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1326"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_column3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="183"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_subcolumn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friends"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+                        android:layout_below="@id/tv_column1"   />
+
+                    <TextView
+                        android:id="@+id/tv_subcolumn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+                        android:layout_below="@id/tv_column2"
+                        android:layout_centerHorizontal="true"   />
+
+                    <TextView
+                        android:id="@+id/tv_subcolumn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Followers"
+                        android:textSize="20sp"
+
+                        android:textStyle="bold"
+                        android:layout_below="@id/tv_column3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/r1_section2"
+                    >
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dasda"
+        />
+
+</ScrollView>
+
+  <!--<TextView
+      android:id="@+id/tv_panel1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:background="@color/colorAccent"
+      android:padding="10dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+       android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_panel9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>-->
+
+  <!--  <TextView
+        android:id="@+id/tv_panelCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+       android:layout_centerInParent="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_panel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+       android:layout_alignLeft="@id/tv_panelCenter"
+        android:layout_above="@id/tv_panelCenter"/>
+
+    <TextView
+        android:id="@+id/tv_panel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_toLeftOf="@id/tv_panelCenter"
+        android:layout_alignBottom="@id/tv_panelCenter"/>
+
+    <TextView
+        android:id="@+id/tv_panel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/tv_panelCenter"
+        android:layout_alignBottom="@id/tv_panelCenter"/>
+
+    <TextView
+        android:id="@+id/tv_panel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_alignLeft="@id/tv_panelCenter"
+        android:layout_below="@id/tv_panelCenter"/>-->
+
+
+
+</LinearLayout>
